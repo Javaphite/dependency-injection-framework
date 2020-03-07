@@ -8,7 +8,16 @@ import java.util.List;
 
 public class SpringApplicationContextAdapter implements Context {
 
-    private ApplicationContext springContext = new AnnotationConfigApplicationContext();
+    private ApplicationContext springContext;
+
+    SpringApplicationContextAdapter() {
+        springContext = new AnnotationConfigApplicationContext();
+        ((AnnotationConfigApplicationContext) springContext).refresh();
+    }
+
+    SpringApplicationContextAdapter(Class<?> configuration) {
+        springContext = new AnnotationConfigApplicationContext(configuration);
+    }
 
     @Override
     public Object getComponent(String name) {
@@ -23,5 +32,15 @@ public class SpringApplicationContextAdapter implements Context {
     @Override
     public boolean containsComponent(String name) {
         return springContext.containsBean(name);
+    }
+
+    @Override
+    public boolean isSingleton(String name) {
+        return springContext.isSingleton(name);
+    }
+
+    @Override
+    public boolean isPrototype(String name) {
+        return springContext.isPrototype(name);
     }
 }

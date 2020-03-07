@@ -21,4 +21,14 @@ public class SourceCodePreprocessingBasedContext implements Context {
     public boolean containsComponent(String name) {
         return false;
     }
+
+    @Override
+    public boolean isSingleton(String name) {
+        return false;
+    }
+
+    @Override
+    public boolean isPrototype(String name) {
+        return false;
+    }
 }

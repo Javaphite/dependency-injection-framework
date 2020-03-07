@@ -1,5 +1,5 @@
 package com.peerlabkyiv.di.context;
-
+/*
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -7,7 +7,7 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.function.Supplier;
-
+/*
 @RunWith(Parameterized.class)
 public class ContextJUnit4Test {
 
@@ -23,7 +23,7 @@ public class ContextJUnit4Test {
     }
 
     @Test
-    void shouldDoSomethingToTestSomething() {
+    void checkComponentServiceIsSingleton() {
 
         // Your test logic here, the same for any context
     }
@@ -44,4 +44,4 @@ public class ContextJUnit4Test {
             return factoryMethod.get();
         }
     }
-}
+}*/

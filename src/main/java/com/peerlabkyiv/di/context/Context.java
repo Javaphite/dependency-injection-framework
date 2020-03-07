@@ -9,4 +9,8 @@ public interface Context {
     List<String> getComponentAliases(String name);
 
     boolean containsComponent(String name);
+
+    boolean isSingleton(String name);
+
+    boolean isPrototype(String name);
 }
