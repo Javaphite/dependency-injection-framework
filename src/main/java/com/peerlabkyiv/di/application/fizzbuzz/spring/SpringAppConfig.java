@@ -1,6 +1,6 @@
-package com.peerlabkyiv.di.application.fizzbuzz;
+package com.peerlabkyiv.di.application.fizzbuzz.spring;
 
-import com.peerlabkyiv.di.application.fizzbuzz.components.FizzBuzzService;
+import com.peerlabkyiv.di.application.fizzbuzz.spring.components.FizzBuzzService;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

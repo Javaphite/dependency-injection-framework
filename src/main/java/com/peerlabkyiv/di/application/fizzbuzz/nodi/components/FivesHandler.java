@@ -1,8 +1,5 @@
-package com.peerlabkyiv.di.application.fizzbuzz.components;
+package com.peerlabkyiv.di.application.fizzbuzz.nodi.components;
 
-import org.springframework.stereotype.Component;
-
-@Component("fivesHandler")
 public class FivesHandler implements FizzBuzzHandler {
 
     @Override

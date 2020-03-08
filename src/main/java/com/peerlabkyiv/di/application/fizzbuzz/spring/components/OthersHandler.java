@@ -1,4 +1,4 @@
-package com.peerlabkyiv.di.application.fizzbuzz.components;
+package com.peerlabkyiv.di.application.fizzbuzz.spring.components;
 
 import org.springframework.stereotype.Component;
 
